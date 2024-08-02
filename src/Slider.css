@@ -1,0 +1,49 @@
+/* Slider.css */
+
+.slider {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 500px; /* Adjust as needed */
+    margin: 0;
+    overflow: hidden;
+    left: -330px;
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+    width: 100%; /* Full width to contain all images */
+    height: 500px;
+}
+
+.slider-images img {
+    width: 100vw; /* Full viewport width for each image */
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.slider-button.prev {
+    left: 10px; /* Adjust as needed */
+}
+
+.slider-button.next {
+    right: 10px; /* Adjust as needed */
+}
+
+.slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,54 @@
+.gallery {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .small-images {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .small-image {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .small-image-1 {
+    top: 0;
+    left: 0;
+  }
+  
+  .small-image-2 {
+    top: 0;
+    right: 0;
+  }
+  
+  .small-image-3 {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .small-image-4 {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .empty {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+  }
+  
+  .large-image {
+    width: 400px;
+    height: auto;
+    background-color: #e0e0e0; 
+  }
+  .small-image:hover {
+    transform: scale(1.1); /* Увеличение изображения на 10% при наведении */
+  }
+  .large-image:hover {
+    transform: scale(1.1); /* Увеличение изображения на 10% при наведении */
+  }
+  

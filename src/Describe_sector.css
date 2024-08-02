@@ -1,0 +1,33 @@
+.describe-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.describe-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-blocks {
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.text-block {
+    flex: 1; 
+    min-width: 200px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.text-block h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-block p {
+    font-size: 16px;
+}
