@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgb(34, 139, 34);
+    background-color: rgb(245, 245, 245);
     padding: 10px;
     position: fixed;
     top: 0;
@@ -19,14 +19,16 @@
 }
 
 .navbar-item {
-    color: white;
+    color: #333;
     cursor: pointer;
     position: relative;
     padding: 10px 20px;
+    text-decoration: none;
 }
 
 .navbar-item:hover {
-    background-color: rgb(25, 95, 25);
+    text-decoration: underline;
+    transition: text-decoration 0.3s linear;
 }
 
 .submenu {
@@ -34,7 +36,7 @@
     position: absolute;
     top: 100%;
     left: -250px;
-    background-color: rgb(34, 139, 34);
+    background-color: rgb(245, 245, 245);
     padding: 0;
     margin: 0;
     display: flex;
@@ -45,14 +47,15 @@
 
 
 .submenu-item {
-    color: white;
+    color: #333;
     padding: 10px 20px;
     cursor: pointer;
     position: relative;
 }
 
 .submenu-item:hover {
-    background-color: rgb(25, 95, 25);
+    text-decoration: underline;
+    transition: text-decoration 0.3s ease;
 }
 
 .sub-submenu {
@@ -60,7 +63,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgb(34, 139, 34);
+    background-color: rgb(245, 245, 245);
     padding: 0;
     display: none;
     margin: 0;
@@ -73,13 +76,15 @@
 }
 
 .sub-submenu-item {
-    color: white;
+    color: #333;
     padding: 10px 20px;
     cursor: pointer;
+    text-decoration:none;
 }
 
 .sub-submenu-item:hover {
-    background-color: rgb(25, 95, 25);
+    text-decoration: underline;
+    transition: text-decoration 0.3s ease;
 }
 
 .link {
@@ -94,7 +99,6 @@
 .navbar-logo {
     flex-shrink: 0;
     margin-right: auto;
-    background-color: white;
 }
 
 .logo-image {

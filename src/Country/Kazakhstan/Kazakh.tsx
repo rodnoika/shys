@@ -11,9 +11,9 @@ function Kaz() {
   const largeImage: string = ''; 
 
   const images = [
-    'https://via.placeholder.com/800x400?text=Slide+1',
-    'https://via.placeholder.com/800x400?text=Slide+2',
-    'https://via.placeholder.com/800x400?text=Slide+3',
+    '../src/assets/ex.jpg',
+    '../src/assets/Astana_ex.png',
+    '../src/assets/Almaty_ex.jpg',
 ];
 
   return (
