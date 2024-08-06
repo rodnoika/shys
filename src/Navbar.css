@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #333;
+    background-color: rgb(34, 139, 34);
     padding: 10px;
     position: fixed;
     top: 0;
@@ -8,6 +8,7 @@
     z-index: 1000;
     display: flex;
     justify-content: flex-end; 
+    
 }
 
 .navbar-menu {
@@ -25,7 +26,7 @@
 }
 
 .navbar-item:hover {
-    background-color: #555;
+    background-color: rgb(25, 95, 25);
 }
 
 .submenu {
@@ -33,17 +34,15 @@
     position: absolute;
     top: 100%;
     left: -250px;
-    background-color: #333;
+    background-color: rgb(34, 139, 34);
     padding: 0;
     margin: 0;
+    display: flex;
     border: 1px solid #555;
-    display: none;
     flex-direction: row;
 }
 
-.navbar-item:hover .submenu {
-    display: flex;
-}
+
 
 .submenu-item {
     color: white;
@@ -53,7 +52,7 @@
 }
 
 .submenu-item:hover {
-    background-color: #555;
+    background-color: rgb(25, 95, 25);
 }
 
 .sub-submenu {
@@ -61,11 +60,11 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: rgb(34, 139, 34);
     padding: 0;
+    display: none;
     margin: 0;
     border: 1px solid #555;
-    display: none;
     flex-direction: column;
 }
 
@@ -80,7 +79,7 @@
 }
 
 .sub-submenu-item:hover {
-    background-color: #555;
+    background-color: rgb(25, 95, 25);
 }
 
 .link {
@@ -95,11 +94,12 @@
 .navbar-logo {
     flex-shrink: 0;
     margin-right: auto;
+    background-color: white;
 }
 
 .logo-image {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border: 1px solid #ddd;
     background-color: white;

@@ -1,27 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { ReactComponent as Logo } from './assets/logo.svg'
+import { ReactComponent as Logo } from './assets/logo.svg';
 
+const Navbar: React.FC = () => {
+    const [isDestinationOpen, setIsDestinationOpen] = useState<boolean>(false);
 
-function Navbar() {
-    const [isDestinationOpen, setIsDestinationOpen] = useState(false);
+    useEffect(() => {
+        console.log(isDestinationOpen);
+    }, [isDestinationOpen]);
 
     const handleDestinationClick = () => {
+        console.log(isDestinationOpen);
         setIsDestinationOpen(!isDestinationOpen);
     };
-    const handleScrollToBottom = (event: React.MouseEvent) => {
+
+    const handleScrollToBottom = (event: React.MouseEvent<HTMLAnchorElement>) => {
         event.preventDefault(); 
         window.scrollTo({
             top: document.body.scrollHeight,
             behavior: 'smooth' 
         });
     };
+
+
+
+    
     return (
         <nav className="navbar">
             <div className="navbar-logo">
                 <Link to="/" className="logo-link">
-                    <Logo/>
+                    <Logo />
                 </Link>
             </div>
             <ul className="navbar-menu">
@@ -46,18 +55,17 @@ function Navbar() {
                             <li className="submenu-item">
                                 <span>Uzbekistan</span>
                                 <ul className="sub-submenu">
-                                    {/* Add items here */}
                                 </ul>
                             </li>
                             <li className="submenu-item">
                                 <span>Kyrgyzstan</span>
                                 <ul className="sub-submenu">
-                                    {/* Add items here */}
                                 </ul>
                             </li>
                         </ul>
                     )}
                 </li>
+                
                 <li className="navbar-item"><Link to="/blog" className='link'>Blog</Link></li>
                 <li className="navbar-item"><Link to="/attractions" className='link'>Attractions</Link></li>
             </ul>

@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         <div className="footer-section">
           <h4>About Us</h4>
-          <p>We are a team of passionate individuals dedicated to bringing you the best culinary experiences.</p>
+          <p>Tourism</p>
         </div>
         <div className="footer-section">
           <h4>Quick Links</h4>

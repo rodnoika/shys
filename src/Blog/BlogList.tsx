@@ -17,24 +17,24 @@ interface Blog {
 const blogs: Blog[] = [
   {
     id: 1,
-    title: 'Exploring the Wonders of Kyoto',
-    excerpt: 'Discover the beauty of Kyoto, Japan, with its historic temples, stunning gardens, and traditional tea houses...',
+    title: 'Exploring the Wonders of Astana',
+    excerpt: 'Discover the beauty of Astana',
     date: '2024-08-01',
-    imageUrl: 'https://via.placeholder.com/150x150?text=Astana', // Example URL
+    imageUrl: 'https://via.placeholder.com/150x150?text=Astana',
   },
   {
     id: 2,
-    title: 'A Journey Through the Swiss Alps',
-    excerpt: 'Experience the breathtaking views and outdoor adventures in the Swiss Alps, from skiing to hiking...',
+    title: 'A Journey Through the Almaty',
+    excerpt: 'Experience the breathtaking views and outdoor adventures in the Almaty',
     date: '2024-07-15',
-    imageUrl: 'https://via.placeholder.com/150x150?text=Almaty', // Example URL
+    imageUrl: 'https://via.placeholder.com/150x150?text=Almaty', 
   },
   {
     id: 3,
-    title: 'Exploring the Streets of Paris',
-    excerpt: 'Immerse yourself in the charm of Paris, France, with its iconic landmarks, delicious cuisine, and vibrant culture...',
+    title: 'Exploring the Streets of Shymkent',
+    excerpt: 'Immerse yourself in the charm of Shymkent',
     date: '2024-06-30',
-    imageUrl: 'https://via.placeholder.com/150x150?text=Shymkent', // Example URL
+    imageUrl: 'https://via.placeholder.com/150x150?text=Shymkent', 
   },
 ];
 
