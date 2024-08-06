@@ -1,7 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Footer.css';
 
 const Footer: React.FC = () => {
+  const handleScrollToUp = (event: React.MouseEvent) => {
+    event.preventDefault(); 
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+};
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -12,24 +21,24 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/" className='link'>Home</Link></li>
+            <li><a href="#" onClick={handleScrollToUp}>Destination</a></li>
+            <li><Link to="/" className='link'>Blog</Link></li>
+            <li><Link to="/" className='link'>Attractions</Link></li>
           </ul>
         </div>
         <div className="footer-section">
           <h4>Contact Us</h4>
-          <p>Email: info@culinarysite.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Email: Your email</p>
+          <p>Phone: Your Phone number</p>
         </div>
         <div className="footer-section">
           <h4>Follow Us</h4>
           <div className="social-media">
-            <a href="#" className="social-icon">F</a>
-            <a href="#" className="social-icon">T</a>
-            <a href="#" className="social-icon">I</a>
-            <a href="#" className="social-icon">L</a>
+            <a href="#" className="social-icon">Linkedin</a>
+            <a href="#" className="social-icon">Whatsapp</a>
+            <a href="#" className="social-icon">Instagram</a>
+            <a href="#" className="social-icon">Facebook</a>
           </div>
         </div>
       </div>

@@ -1,0 +1,34 @@
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .blog-content {
+    margin-top: 20px;
+  }
+  
+  .blog-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog-content .date {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .blog-content p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  

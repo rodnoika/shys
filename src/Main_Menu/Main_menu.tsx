@@ -1,10 +1,11 @@
-import './App.css'
-import Navbar from './navbar.tsx'
-import Slider from './Slider.tsx'
+import '../App.css'
+import Navbar from '../navbar.tsx'
+import Slider from '../Slider.tsx'
 import DescribeSection from './Describe_sectors.tsx';
 import Map from './Map.tsx';
-import Gallery from './Gallery.tsx';
-import Footer from './Footer.tsx';
+import Gallery from '../Gallery.tsx';
+import Footer from '../Footer.tsx';
+
 function App() {
   const smallImages: string[] = []; 
   const largeImage: string = ''; 

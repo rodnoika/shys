@@ -1,0 +1,180 @@
+Here is the CSS code with all comments removed:
+
+```css
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    max-width: 350px;
+    margin-right: 20px;
+}
+
+.image-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.image.placeholder {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100px;
+    height: 100px;
+}
+
+.text {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.oblas:hover {
+    animation: colorChange 0.5s forwards;
+}
+.capital {
+    fill: rgb(223, 231, 128);
+}
+.kostanai {
+    fill: rgb(112, 202, 169);
+}
+.north {
+    fill: rgb(149, 221, 158);
+}
+.pavlodar {
+    fill: rgb(185, 202, 128);
+}
+.east {
+    fill: rgb(229, 186, 100);
+}
+.center {
+    fill: rgb(236, 211, 85);
+}
+.aqtobe {
+    fill: rgb(133, 224, 223);
+}
+.west {
+    fill: rgb(162, 155, 239);
+}
+.atyrau {
+    fill: rgb(150, 170, 243);
+}
+.mangystau {
+    fill: rgb(143, 211, 245);
+}
+.Qyzylorda {
+    fill: rgb(207, 184, 213);
+}
+.almaty {
+    fill: rgb(248, 182, 125);
+}
+.Zhambyl {
+    fill: rgb(249, 186, 98);
+}
+.South {
+    fill: rgb(234, 158, 163);
+}
+.water {
+    fill: rgba(0, 119, 255, 0.432);
+}
+.capital, .kostanai, .north, .pavlodar, .east, .center, 
+.aqtobe, .west, .atyrau, .mangystau, .Qyzylorda, 
+.almaty, .Zhambyl, .South {
+    stroke: black;
+    stroke-width: 1px;
+    transition: stroke-width 0.3s ease, box-shadow 0.3s ease;
+}
+.capital:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.kostanai:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.north:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.pavlodar:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.east:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.center:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.aqtobe:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.west:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.atyrau:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.mangystau:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.Qyzylorda:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.almaty:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.Zhambyl:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+.South:hover {
+    stroke-width: 3px;
+    animation: shimmer 1s infinite;
+}
+@keyframes shimmer {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
+}
+```

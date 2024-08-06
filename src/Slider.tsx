@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import './Slider.css';
 
 interface SliderProps {
@@ -8,13 +8,17 @@ interface SliderProps {
 const Slider: React.FC<SliderProps> = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const handlePrevious = () => {
+    const handlePrevious = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    };
+    }, [images.length]);
 
-    const handleNext = () => {
+    const handleNext = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    };
+    }, [images.length]);
+
+    if (images.length === 0) {
+        return <div className="slider">No images available</div>;
+    }
 
     return (
         <div className="slider">

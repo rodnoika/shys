@@ -3,8 +3,8 @@ import './Gallery.css';
 
 interface GalleryProps {
   smallImages: string[];
-  largeImage?: string; // Сделаем largeImage необязательным
-  nums: number; // Use number or bigint if needed
+  largeImage?: string; 
+  nums: number; 
 }
 
 const Gallery: React.FC<GalleryProps> = ({ smallImages, largeImage, nums }) => {
@@ -34,7 +34,7 @@ const Gallery: React.FC<GalleryProps> = ({ smallImages, largeImage, nums }) => {
 
   if (nums === 1) {
     return (
-      <div className="gallery">
+      <div className="gallerys">
         <div className="small-images">
           {renderSmallImages()}
         </div>
@@ -44,7 +44,7 @@ const Gallery: React.FC<GalleryProps> = ({ smallImages, largeImage, nums }) => {
   }
 
   return (
-    <div className="gallery">
+    <div className="gallerys">
       <img src={largeImage || defaultImage} alt="Large" className="large-image" />
       <div className="small-images">
         {renderSmallImages()}

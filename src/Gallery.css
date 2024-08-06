@@ -1,4 +1,4 @@
-.gallery {
+.gallerys {
     display: flex;
     justify-content: center; 
   }
@@ -46,9 +46,9 @@
     background-color: #e0e0e0; 
   }
   .small-image:hover {
-    transform: scale(1.1); /* Увеличение изображения на 10% при наведении */
+    transform: scale(1.1); 
   }
   .large-image:hover {
-    transform: scale(1.1); /* Увеличение изображения на 10% при наведении */
+    transform: scale(1.1); 
   }
   

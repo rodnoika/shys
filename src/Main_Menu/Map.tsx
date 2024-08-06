@@ -61,7 +61,7 @@ const Map: React.FC = () => {
 
     return (
         <>
-        <div><h1>Исследуй Центральную Азию по карте</h1></div>
+        <div><h1>Explore Central Asia on the map</h1></div>
         <div className="main-container">
             <div className="container">
                 <div className="image-row">
