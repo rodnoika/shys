@@ -1,0 +1,54 @@
+/* Slider.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Отключить горизонтальный скролл */
+  }
+  
+  .slider {
+    position: relative;
+    width: 100vw; /* Используйте 100% ширины окна просмотра */
+    height: 500px; /* Используйте 100% высоты окна просмотра */
+    overflow: hidden;
+    box-sizing: border-box; /* Включите внутренние отступы и границы в общую ширину и высоту */
+  }
+  
+  .slider-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    box-sizing: border-box; /* Включите внутренние отступы и границы в общую ширину и высоту */
+  }
+  
+  .slide {
+    flex: 0 0 100vw; /* Слайд занимает 100% ширины экрана */
+    height: 100vh; /* Высота слайда равна высоте окна просмотра */
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Чтобы изображение масштабировалось и не искажалось */
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  

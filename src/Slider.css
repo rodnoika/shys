@@ -1,48 +1,47 @@
 .slider {
-    position: relative;
-    width: 100vw;
-    height: 500px;
-    margin: 0;
-    overflow: hidden;
-    
-    left: -330px;
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  position: relative;
+  width: 100%;
+  height: 600px; /* Или любое другое значение высоты */
+  overflow: hidden;
 }
 
 .slider-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-    height: 500px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 10000px; /* Убедитесь, что ширина достаточна для всех слайдов */
+  transform: translateX(-100px); /* Сдвинуть влево на 100px (или любое другое значение) */
 }
 
-.slider-images img {
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-    flex-shrink: 0;
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%; /* Занимает всю высоту контейнера */
+  object-fit: cover; /* Обеспечивает корректное отображение изображений */
 }
 
 .slider-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.slider-button.prev {
-    left: 10px;
+.prev {
+  left: 10px;
 }
 
-.slider-button.next {
-    right: 10px;
-}
-
-.slider-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.next {
+  right: 10px;
 }

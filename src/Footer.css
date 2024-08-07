@@ -6,9 +6,8 @@
     position: relative;
     bottom: 0;
     top: 100px;
-    width: 1870px;
-    left: -320px;
-
+    width: 100%;
+    margin: auto;
   }
   
   .footer-container {
@@ -85,3 +84,43 @@
   .link:visited {
     color: inherit; 
   }
+  @media (max-width: 768px) {
+    .footer {
+        padding: 20px 10px; /* Уменьшить отступы для мобильных устройств */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Отображать секции одна под другой */
+        align-items: center; /* Выравнивание по центру */
+    }
+
+    .footer-section {
+        min-width: 100%; /* Занимать всю ширину контейнера */
+        margin: 10px 0; /* Уменьшить отступы между секциями */
+    }
+
+    .footer-section h4 {
+        margin-bottom: 10px; /* Уменьшить отступ снизу для заголовков */
+        font-size: 16px; /* Уменьшить размер шрифта заголовков */
+    }
+
+    .footer-section ul li {
+        margin-bottom: 8px; /* Уменьшить отступы между пунктами списка */
+    }
+
+    .social-media {
+        justify-content: center; /* Выравнивание по центру */
+        margin-top: 10px; /* Добавить отступ сверху */
+    }
+
+    .social-icon {
+        width: 25px; /* Уменьшить размер иконок */
+        height: 25px;
+        font-size: 14px; /* Уменьшить размер шрифта */
+    }
+
+    .footer-bottom {
+        margin-top: 10px; /* Уменьшить отступ сверху */
+        font-size: 12px; /* Уменьшить размер шрифта */
+    }
+}
