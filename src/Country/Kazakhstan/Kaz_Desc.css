@@ -49,11 +49,10 @@
 .text-block p {
     font-size: 16px;
 }
-/* Стили для мобильных устройств */
 @media (max-width: 768px) {
     .describe-section {
         flex-direction: column;
-        min-height: auto; /* Сбрасываем минимальную высоту */
+        min-height: auto; 
         padding: 10px;
         
         gap: 10px;
@@ -61,14 +60,14 @@
 
     .image-container {
         max-width: 100%;
-        flex-direction: row; /* Изменить направление на строку */
-        overflow-x: auto; /* Добавить горизонтальный скролл при необходимости */
+        flex-direction: row; 
+        overflow-x: auto; 
         gap: 10px;
     }
 
     .image-wrapper {
         
-        width: 100px; /* Уменьшить размер изображения */
+        width: 100px; 
         height: 100px;
     }
 
@@ -86,16 +85,16 @@
     }
 
     .text-block {
-        min-width: 100%; /* Занимать всю ширину */
+        min-width: 100%; 
         padding: 10px;
     }
 
     .text-block h3 {
-        font-size: 18px; /* Уменьшить размер заголовка */
+        font-size: 18px;
         margin-bottom: 8px;
     }
 
     .text-block p {
-        font-size: 14px; /* Уменьшить размер текста */
+        font-size: 14px; 
     }
 }

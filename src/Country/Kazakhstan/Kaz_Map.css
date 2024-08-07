@@ -174,10 +174,9 @@
         box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
     }
 }
-/* Стили для мобильных устройств */
 @media (max-width: 768px) {
     .main-container {
-        flex-direction: column; /* Изменить направление на column для мобильной версии */
+        flex-direction: column; 
 
         padding: 8px;
         border-width: 1px;
@@ -201,8 +200,8 @@
         height: 70px;
     }
     .Count{
-        transform: scale(0.44); /* Уменьшить размер SVG в 2 раза */
-        transform-origin: left; /* Устанавливает точку масштабирования в верхний левый угол */
+        transform: scale(0.44); 
+        transform-origin: left; 
 
     }
     .text {
@@ -211,18 +210,17 @@
 
     .map-container {
         
-        align-items: center; /* Центрировать элементы внутри контейнера карты */
+        align-items: center; 
     }
 
     .oblas:hover {
         animation: colorChange 0.5s forwards;
     }
 
-    /* Уменьшить размеры SVG элементов на мобильных */
     .capital, .kostanai, .north, .pavlodar, .east, .center, 
     .aqtobe, .west, .atyrau, .mangystau, .Qyzylorda, 
     .almaty, .Zhambyl, .South {
-        stroke-width: 1px; /* Уменьшить толщину линии */
+        stroke-width: 1px; 
     }
     
     .capital:hover,
@@ -239,7 +237,7 @@
     .almaty:hover,
     .Zhambyl:hover,
     .South:hover {
-        stroke-width: 2px; /* Уменьшить толщину линии при наведении */
+        stroke-width: 2px; 
         animation: shimmer 1s infinite;
     }
 }

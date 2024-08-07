@@ -9,6 +9,7 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
+    
   }
   
   .blog-content {
@@ -31,4 +32,24 @@
     font-size: 1.1rem;
     color: #333;
   }
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 10px;
+  }
+
+  .blog-content h1 {
+    font-size: 1.6rem; 
+  }
+
+  .blog-content .date {
+    font-size: 0.7rem; 
+  }
+
+  .blog-content p {
+    font-size: 0.9rem; 
+  }
+  .blog-image{
+    margin-top: 200px;
+  }
+}
   

@@ -1,18 +1,18 @@
 .slider {
   display: flex;
-  justify-content: center; /* Центрирование по горизонтали */
-  align-items: center; /* Центрирование по вертикали */
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
-  height: 600px; /* Или любое другое значение высоты */
+  height: 600px;
   overflow: hidden;
 }
 
 .slider-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 10000px; /* Убедитесь, что ширина достаточна для всех слайдов */
-  transform: translateX(-100px); /* Сдвинуть влево на 100px (или любое другое значение) */
+  width: 10000px;
+  transform: translateX(-100px);
 }
 
 .slide {
@@ -22,8 +22,8 @@
 
 .slide img {
   width: 100%;
-  height: 100%; /* Занимает всю высоту контейнера */
-  object-fit: cover; /* Обеспечивает корректное отображение изображений */
+  height: 100%;
+  object-fit: cover;
 }
 
 .slider-button {
